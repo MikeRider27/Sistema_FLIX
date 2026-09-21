@@ -58,3 +58,15 @@ Sentencias preparadas (sin emulación) en todas las consultas, contraseñas con 
 ## Producción
 
 El compose está pensado para desarrollo (monta el código como volumen). Para producción: quitar el volumen `./:/var/www/html` del servicio `app` (la imagen ya copia el código), no publicar el puerto de PostgreSQL y servir detrás de HTTPS.
+
+## Autor
+
+Miguel Villalba, 2026
+Email: mike.mavc27@gmail.com
+
+## Licencia MIT
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Licencia
+
+[MIT](LICENSE). Los componentes de terceros en `public/assets/` (AdminLTE, Bootstrap, jQuery, etc.) conservan sus propias licencias.
