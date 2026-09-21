@@ -67,6 +67,3 @@ Email: mike.mavc27@gmail.com
 ## Licencia MIT
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-## Licencia
-
-[MIT](LICENSE). Los componentes de terceros en `public/assets/` (AdminLTE, Bootstrap, jQuery, etc.) conservan sus propias licencias.
