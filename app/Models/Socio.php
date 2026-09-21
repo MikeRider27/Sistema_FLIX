@@ -24,6 +24,11 @@ final class Socio extends Model
         return self::todos($sql . ' ORDER BY s.apellido, s.nombre', $p);
     }
 
+    public static function contarActivos(): int
+    {
+        return (int) self::valor("SELECT count(*) FROM socios WHERE estado = 'activo'");
+    }
+
     public static function encontrar(int $id): ?array
     {
         return self::uno('SELECT * FROM socios WHERE id_socio = :id', ['id' => $id]);
