@@ -22,7 +22,7 @@ final class Csrf
     {
         $enviado = $_POST['_csrf'] ?? '';
         if (!is_string($enviado) || !hash_equals(self::token(), $enviado)) {
-            throw new HttpException('El formulario expiró o es inválido. Volvé a intentarlo.', 419);
+            throw new HttpException('El formulario expiró o es inválido. Volvé a intentarlo.', 403);
         }
     }
 }

@@ -78,7 +78,7 @@ final class Router
     private function error(int $codigo, string $mensaje = ''): void
     {
         http_response_code($codigo);
-        $titulos = [403 => 'Acceso denegado', 404 => 'Página no encontrada', 405 => 'Método no permitido', 419 => 'Sesión expirada', 500 => 'Error del servidor'];
+        $titulos = [403 => 'Acceso denegado', 404 => 'Página no encontrada', 405 => 'Método no permitido', 500 => 'Error del servidor'];
         View::render('errores/error', [
             'titulo'  => $titulos[$codigo] ?? 'Error',
             'codigo'  => $codigo,
